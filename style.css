@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth ;
+}
+header{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 80px;
+}
+.logo{
+    width: 120px;
+    padding-left: 20px;
+}
+.navi a{
+    position: relative;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    padding: 5px 20px;
+}
+.navi a::before{
+    position: absolute;
+    content:"" ;
+    left: 0;
+    top: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #ffafcc;
+    transition: 0.3s;
+
+}
+.navi a:hover{
+    color:#ffafcc ;
+}
+.navi a:hover::before{
+    width: 100%;
+}
+section{
+    padding: 150px 100px;
+}
+.home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(asro-ba.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.home h2{
+    color: black;
+    font-size: 25px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.home h2 span{
+    display: inline-block;
+    color: #f64586;
+    font-size: 50px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.home h3{
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: 1opx;
+    margin-bottom: 10px;
+}
+.home .hire{
+    text-decoration: none;
+    background-color: #f64586;
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    margin-left: 30px;
+}
+.home .hire:hover{
+    background-color: #ffafcc;
+    color: #f64586;
+    transform: scale(1.2);
+    transition: 0.7s;
+}
+.social a{
+    color: #000000;
+    font-size: 25px;
+    padding-right: 30px;
+    display: inline-block;
+}
+.social a:hover{
+    color:#f64586;
+    transform: scale(1.2);
+    transition: 0.7s ;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    color: #f64586;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    width: 340px;
+    box-shadow: 0 5px 25px #efc2d355;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.icon{
+    color: black;
+    font-size: 120px;
+    text-align: center;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #000000;
+    font-size: 30px;
+    font-weight: 500;
+    margin: 15px;
+}
+.info p{
+    color: #f64586;
+    font-size: 15px;
+}
+#contact .icon{
+    font-size: 60px;
+    color: black;
+}
+#contact h3 {
+    font-size: 25px;
+}
+#contact .info p {
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}
+footer{
+    background-color: #e596b2;
+    color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+footer p{
+    font-size: 18px;
+    font-weight: 500;
+}
+footer p span{
+    color:#93093b ;
+}
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .navi a{
+        padding-left: 5px;
+        font-size: 13px;
+    }
+    .logo{
+        width: 40px;
+        padding: 0;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        margin: 0;
+    }
+    footer p{
+        font-size: 14px;
+    }
+    footer .social a{
+        font-size: 20px;
+        padding-right: 15px;
+    }
+}
