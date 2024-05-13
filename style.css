@@ -7,8 +7,26 @@
     box-sizing: border-box;
     scroll-behavior: smooth ;
 }
+:root{
+    --maincolor: #f64586;
+    --color2: #ffafcc ;
+    --color3: black ;
+    --color4: white ;
+    --footercolor: #e596b2 ;
+    --foocolo2: #93093b ;
+    --shadowcolor: #efc2d355 ;
+}
+:root{
+    --maincolor: #4186e8;
+    --color2: #b1d2e9 ;
+    --color3:rgb(18, 69, 94) ;
+    --color4: white ;
+    --footercolor: #6da6d1 ;
+    --foocolo2: #072d3f ;
+    --shadowcolor: #c2d5ef55 ;
+}
 header{
-    background-color: white;
+    background-color: var(--color4);
     width: 100%;
     position: fixed;
     z-index: 1000;
@@ -23,7 +41,7 @@ header{
 }
 .navi a{
     position: relative;
-    color: black;
+    color: var(--color3);
     text-decoration: none;
     font-weight: 300;
     padding: 5px 20px;
@@ -35,12 +53,12 @@ header{
     top: -2px;
     width: 0;
     height: 2px;
-    background-color: #ffafcc;
+    background-color: var(--color2);
     transition: 0.3s;
 
 }
 .navi a:hover{
-    color:#ffafcc ;
+    color:var(--color2);
 }
 .navi a:hover::before{
     width: 100%;
@@ -54,26 +72,26 @@ section{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(asro-back.jpg) no-repeat;
+    background: url(asro-ba.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 .home h2{
-    color: black;
+    color: var(--color3);
     font-size: 25px;
     font-weight: 300;
     margin-top: 30px;
 }
 .home h2 span{
     display: inline-block;
-    color: #f64586;
+    color: var(--maincolor);
     font-size: 50px;
     font-weight: 400;
     margin-top: 10px;
 }
 .home h3{
-    color: black;
+    color: var(--color3);
     font-size: 30px;
     font-weight: 500;
     letter-spacing: 2px;
@@ -82,8 +100,8 @@ section{
 }
 .home .hire{
     text-decoration: none;
-    background-color: #f64586;
-    color: white;
+    background-color: var(--maincolor);
+    color: var(--color4);
     display: inline-block;
     padding: 10px;
     letter-spacing: 1px;
@@ -92,26 +110,26 @@ section{
     margin-left: 30px;
 }
 .home .hire:hover{
-    background-color: #ffafcc;
-    color: #f64586;
+    background-color: var(--color2);
+    color: var(--maincolor);
     transform: scale(1.2);
     transition: 0.7s;
 }
 .social a{
-    color: #000000;
+    color: var(--color3);
     font-size: 25px;
     padding-right: 30px;
     display: inline-block;
 }
 .social a:hover{
-    color:#f64586;
+    color:var(--maincolor);
     transform: scale(1.2);
     transition: 0.7s ;
 }
 .title{
     display: flex;
     justify-content: center;
-    color: #f64586;
+    color: var(--maincolor);
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -123,9 +141,9 @@ section{
     flex-wrap: wrap;
 }
 .card{
-    background-color: white;
+    background-color: var(--color4);
     width: 340px;
-    box-shadow: 0 5px 25px #efc2d355;
+    box-shadow: 0 5px 25px var(--shadowcolor);
     border-radius: 15px;
     padding: 25px;
     margin: 20px;
@@ -135,7 +153,7 @@ section{
     transition: 0.7s;
 }
 .icon{
-    color: black;
+    color: var(--color3);
     font-size: 120px;
     text-align: center;
 }
@@ -143,18 +161,18 @@ section{
     text-align: center;
 }
 .info h3{
-    color: #000000;
+    color: var(--color3);
     font-size: 30px;
     font-weight: 500;
     margin: 15px;
 }
 .info p{
-    color: #f64586;
+    color: var(--maincolor);
     font-size: 15px;
 }
 #contact .icon{
     font-size: 60px;
-    color: black;
+    color: var(--color3);
 }
 #contact h3 {
     font-size: 25px;
@@ -162,11 +180,11 @@ section{
 #contact .info p {
     font-size: 20px;
     font-weight: 500;
-    color: black;
+    color: var(--color3);
 }
 footer{
-    background-color: #e596b2;
-    color: black;
+    background-color: var(--footercolor);
+    color: var(--color3);
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -176,7 +194,7 @@ footer p{
     font-weight: 500;
 }
 footer p span{
-    color:#93093b ;
+    color:var(--foocolo2) ;
 }
 
 @media (max-width:1023px){
