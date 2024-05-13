@@ -7,15 +7,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth ;
 }
-:root{
+/* :root{
     --maincolor: #f64586;
     --color2: #ffafcc ;
     --color3: black ;
     --color4: white ;
     --footercolor: #e596b2 ;
     --foocolo2: #93093b ;
-    --shadowcolor: #efc2d355 ;
-}
+    --shadowcolor: #efc2d355 ; 
+}  */
 :root{
     --maincolor: #4186e8;
     --color2: #b1d2e9 ;
